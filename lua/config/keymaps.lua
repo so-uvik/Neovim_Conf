@@ -3,7 +3,6 @@
 -- Add any additional keymaps here
 
 local keymap = vim.keymap
-local opts = { noremap = true, silent = true }
 
 --SELECT ALL
 keymap.set("n", "<C-a>", "gg<S-v>G")
