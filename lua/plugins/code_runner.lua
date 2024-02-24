@@ -17,6 +17,6 @@ return {
     cpp = { "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt" },
   },
   keys = {
-    { "<leader>r", "RunCode<CR>", desc = "Run Code" },
+    { "<leader>r", "RunCode", desc = "Run Code" },
   },
 }
