@@ -9,6 +9,7 @@ return {
     },
     python = "python3 -u",
     typescript = "deno run",
+    javscript = "node $fileName",
     rust = {
       "cd $dir &&",
       "rustc $fileName &&",
@@ -17,6 +18,6 @@ return {
     cpp = { "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt" },
   },
   keys = {
-    { "<leader>r", "RunCode", desc = "Run Code" },
+    { "<leader>r", "<cmd>RunCode<CR>", desc = "Run Code" },
   },
 }

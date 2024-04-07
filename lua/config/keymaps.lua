@@ -7,3 +7,11 @@ local opts = { noremap = true, silent = true }
 
 --SELECT ALL
 keymap.set("n", "<C-a>", "gg<S-v>G")
+
+--TOGGLE CURRENT LINE BLAME
+keymap.set(
+  "n",
+  "<leader>ght",
+  "<cmd>Gitsigns toggle_current_line_blame<CR>",
+  { desc = "Toggle Current Line Blame(Git files only)" }
+)
